@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+
+* {
+  list-style-type: none;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+/* navbar */
+.navbar {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-item {
+  margin: 0;
+  font-size: 23px;
+  
+}
+
+.nav-link {
+  text-decoration: none;
+  color:cadetblue;
+}
+
+.active {
+  color: #f39c12; 
+  text-decoration: underline;
+}
+/* ------- */
+
+.welcome-container {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.welcome-container h2 {
+  font-size: 46px;
+  margin-bottom: 20px;
+}
+
+.welcome-container p {
+  font-size: 21px;
+  margin-bottom: 40px;
+}
+
+.login-button {
+  display: inline-block;
+  padding: 21px 34px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 32px;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.login-button:hover {
+  background-color: #0056b3;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+
+.user-email {
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Login */
+
+.login-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.login-button:hover {
+  background-color: #0056b3;
+}
+
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.button-container button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.button-container button:hover {
+  background-color: #0056b3;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.button-container button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.button-container button:hover {
+  background-color: #0056b3;
+}
+
+.button-container button.active {
+  background-color: #0056b3;
+}
+
+.form-container {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column; /* Alt alta hizalama */
+}
+
+.form-group label {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #f0f0f0;
+  box-shadow: inset 0px 2px 3px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.form-group input:focus {
+  background-color: #fff;
+}
+
+.form button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.form button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+
+.user-info-container {
+  display: flex;
+  align-items: center;
+}
+
+.user-log-info {
+  margin-right: 10px;
+}
+
+.logout-button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #c82333;
+}
+
+/* my contacts */
+
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Yeni bir özellik ekleniyor */
+  margin-top: 20px;
+}
+
+.card {
+  width: 40%; /* Width değeri artırıldı */
+  background-color: #007bff;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 20px;
+  text-align: center;
+  border: 2px solid #0056b3;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.card:hover {
+  background-color: #0056b3;
+  border-color: #007bff;
+}
+
+.card .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.card .name {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.card .bottom {
+  font-size: 1rem;
+}
+
+.card p {
+  margin: 5px 0;
+}
+.card img {
+  border-radius: 50%;
+} 
+
+/* .contacts-container {
+  text-align: center;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #282c36;  
+
+} */
+
+ .login-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.login-button:hover {
+  background-color: #0056b3;
+}
+
+
+/* add contact */
+
+.add-contact-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.add-contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
